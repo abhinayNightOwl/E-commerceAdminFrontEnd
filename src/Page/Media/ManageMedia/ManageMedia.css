@@ -1,0 +1,148 @@
+.manage-media-page {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  .manage-media-container {
+    display: flex;
+    flex-grow: 1;
+  }
+  
+  .manage-media-main {
+    flex-grow: 1;
+    padding: 20px;
+  }
+  
+  .manage-media-box {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+  }
+  
+  .manage-media-box h2 {
+    margin-bottom: 10px;
+    color: #000; /* Set text color to black */
+  }
+  
+  .divider {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 20px 0;
+  }
+  
+  .manage-media-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .media-button {
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+  
+  .media-button.active-button {
+    background-color: purple;
+    color: #fff;
+  }
+  
+  .media-button:hover {
+    background-color: #e6e6e6; /* Light gray on hover */
+  }
+  
+  .actions-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .select-all {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .select-all input[type="checkbox"] {
+    margin-right: 5px;
+  }
+  
+  .action-buttons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .delete-button {
+    padding: 10px;
+    background-color: red;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .delete-button:hover {
+    background-color: darkred;
+  }
+  
+  .add-new-button {
+    padding: 10px;
+    background-color: purple;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .add-new-button:hover {
+    background-color: darkviolet;
+  }
+  
+  .images-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .media-image-container {
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .media-image-container.selected {
+    border: 2px solid purple;
+  }
+  
+  .media-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+  }
+  
+  .load-more-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .product-count {
+    font-size: 14px;
+  }
+  
+  .load-more-button {
+    padding: 10px;
+    background-color: yellow;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .load-more-button:hover {
+    background-color: gold;
+  }
+  

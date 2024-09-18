@@ -1,0 +1,343 @@
+ .add-product-page {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  .add-product-container {
+    display: flex;
+    flex: 1;
+  }
+  
+  .sidebar {
+    width: 200px; /* Adjust based on your design */
+  }
+  
+  .content {
+    flex: 1;
+    margin-left: 20px; /* Space between sidebar and content */
+    padding: 20px;
+  }
+  
+  h1 {
+    margin-bottom: 10px;
+  }
+  
+  hr {
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 1px solid #ccc;
+  }
+  
+  .tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .tab-button {
+    padding: 10px 20px;
+    border: none;
+    background-color: lightgray;
+    color: black;
+    cursor: pointer;
+    margin: 0 5px;
+    border-radius: 5px;
+  }
+  
+  .tab-button.active {
+    background-color: purple;
+    color: white;
+  }
+  
+  .tab-content {
+    display: none;
+  }
+  
+  .tab-content.active {
+    display: block;
+  }
+  
+  .general-info {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  .info-content {
+    margin-top: 20px;
+  }
+  
+  .info-row {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .add-media {
+    flex: 1;
+    margin-right: 20px;
+    position: relative;
+  }
+  
+  .add-media-button {
+    display: block;
+    margin-bottom: 10px;
+    background-color: purple;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .add-media-button:focus {
+    outline: none;
+  }
+  
+  .media-preview {
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+  }
+  
+  .category-info {
+    flex: 1;
+  }
+  
+  .category-info label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .category-info select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 20px;
+  }
+  
+  .gap {
+    margin: 5px 0;
+  }
+  
+  .category-info input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+  }
+  
+  .continue-button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: purple;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .continue-button:focus {
+    outline: none;
+  }
+  /* Modal Styles */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  position: relative;
+  width: 80%;
+  max-width: 800px;
+  overflow: auto;
+}
+
+.modal-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #333;
+}
+
+.modal-divider {
+  border-top: 1px solid #ddd;
+  margin: 20px 0;
+}
+
+.modal-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.modal-button {
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+  border: 1px solid #ddd;
+  background: #f9f9f9;
+  border-radius: 4px;
+}
+
+.modal-button.active {
+  background-color: #007bff;
+  color: white;
+}
+
+.modal-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.modal-image-container {
+  margin: 5px;
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+
+.modal-image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.modal-image-container.selected .modal-image {
+  border-color: #007bff;
+}
+
+.modal-choose-button {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.advanced-info-container {
+  display: flex;
+  gap: 20px; /* Gap between left and right advanced info sections */
+}
+
+.leftadvancedinfo,
+.rightadvancedinfo {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.leftadvancedinfo label,
+.rightadvancedinfo label {
+  margin-top: 10px;
+}
+
+.leftadvancedinfo select,
+.rightadvancedinfo select,
+.leftadvancedinfo input,
+.rightadvancedinfo input {
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.gap {
+  margin-bottom: 15px;
+}
+
+.switch {
+  display: flex;
+  align-items: center;
+}
+
+.switch input {
+  display: none;
+}
+
+.switch input + label {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 24px;
+  background-color: #ccc;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.switch input + label:before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border-radius: 50%;
+  transition: transform 0.2s;
+}
+
+.switch input:checked + label {
+  background-color: #007bff;
+}
+
+.switch input:checked + label:before {
+  transform: translateX(16px);
+}
+
+/* Additional CSS for rectangle containers */
+.rectangle-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+
+.rectangle-container span {
+  flex: 1;
+}
+
+.rectangle-container .switch {
+  flex: 0;
+}
+.seo-info .seo-rectangle {
+  display: flex;
+  justify-content: space-between;
+}
+.leftseodescription, .rightseodescription {
+  width: 45%;
+  padding: 10px;
+}
+.continue-button, .save-button {
+  padding: 10px 20px;
+  cursor: pointer;
+}
+.back-button {
+  padding: 10px 20px;
+  cursor: pointer;
+  height: 35px;
+}
+.button-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+  

@@ -1,0 +1,216 @@
+/* src/components/Dashboard.css */
+.dashboard {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  .dashboard-body {
+    display: flex;
+    flex: 1;
+  }
+  
+  .main-content {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .stats-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    gap: 20px;
+  }
+  
+  .stats-box {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    width: 22%;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .stats-box h4 {
+    margin-bottom: 10px;
+  }
+  
+  .stats-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .total-number {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .increase {
+    color: green;
+  }
+  
+  .increase i {
+    margin-left: 5px;
+  }
+  
+  .compare-text {
+    color: #999;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+  }
+  
+  .header-left {
+    font-size: 24px;
+  }
+  
+  .header-right {
+    display: flex;
+  }
+  
+  .header-button {
+    background-color: #555;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  
+  .header-button:hover {
+    background-color: #777;
+  }
+  
+  .sidebar {
+    background-color: #f4f4f4;
+    padding: 20px;
+    width: 250px;
+  }
+  
+  .sidebar-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .icon {
+    margin-right: 10px;
+  }
+  
+  .sidebar-text {
+    flex-grow: 1;
+  }
+  
+  .rectangles-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    gap: 20px;
+  }
+  
+  .rectangle-box {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    width: 48%;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .update-details {
+    margin-top: 20px;
+  }
+  
+  .update-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .update-item i {
+    margin-right: 10px;
+  }
+  
+  .update-item div {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .gap-section {
+    margin-top: 40px;
+  }
+  
+  .monthly-sales-box,
+  .orders-box {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+  }
+  
+  .monthly-sales-title,
+  .orders-title {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .orders-title {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+  }
+  
+  .graph-section {
+    margin-top: 20px;
+  }
+  
+  .table-container {
+    margin-top: 20px;
+  }
+  
+  .table-title {
+    margin-bottom: 10px;
+  }
+  
+  .table-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .table-actions select,
+  .table-actions input {
+    margin-left: 10px;
+  }
+  
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .table th,
+  .table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  .table th {
+    background-color: #f4f4f4;
+    text-align: left;
+  }
+  

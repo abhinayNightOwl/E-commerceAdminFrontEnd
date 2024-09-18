@@ -1,0 +1,31 @@
+/* src/components/Header.css */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+  }
+  
+  .header-left {
+    font-size: 24px;
+  }
+  
+  .header-right {
+    display: flex;
+  }
+  
+  .header-button {
+    background-color: #555;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  
+  .header-button:hover {
+    background-color: #777;
+  }
+  

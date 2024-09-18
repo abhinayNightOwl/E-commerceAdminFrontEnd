@@ -1,0 +1,65 @@
+.account-adjustment-page {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  .account-adjustment-container {
+    display: flex;
+    flex: 1;
+  }
+  .account-adjustment-main {
+    flex: 1;
+    padding: 20px;
+  }
+  .account-adjustment-header-gap {
+    height: 20px;
+  }
+  .account-adjustment-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .account-adjustment-title {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  .account-adjustment-divider {
+    border: 1px solid #ccc;
+    margin: 20px 0;
+  }
+  .account-adjustment-rectangle {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  .account-adjustment-label {
+    font-size: 16px;
+    margin-bottom: 10px;
+    display: block;
+  }
+  
+  .account-adjustment-dropdown {
+    width: 93%;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  .account-adjustment-input {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  .account-adjustment-submit-button {
+    background-color: purple;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-right: 10px;
+  }
+  
+  .account-adjustment-submit-button:hover {
+    background-color: darkviolet;
+  }
+  

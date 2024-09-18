@@ -1,0 +1,87 @@
+.add-sale-page {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  .add-sale-container {
+    display: flex;
+    flex-grow: 1;
+  }
+  
+  .add-sale-main {
+    flex-grow: 1;
+    padding: 20px;
+  }
+  
+  .add-sale-header-gap {
+    height: 20px;
+  }
+  
+  .add-sale-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .add-sale-divider {
+    margin-bottom: 20px;
+  }
+  
+  .add-sale-rectangle {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .rectangle-title {
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .quotation-dropdown,
+  .warehouse-dropdown,
+  .customer-dropdown,
+  .product-dropdown,
+  .coupon-dropdown,
+  .tax-dropdown,
+  .sale-date-input,
+  .customer-address-input,
+  .note-input,
+  .discount-input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .add-sale-totals {
+    margin-top: 20px;
+  }
+  
+  .totals-title {
+    display: inline-block;
+    width: 120px;
+    font-weight: bold;
+  }
+  
+  .totals-value {
+    display: inline-block;
+    width: 100px;
+  }
+  
+  .submit-button {
+    background-color: purple;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-right: 10px;
+  }
+  
+  .submit-button:hover {
+    background-color: darkviolet;
+  }
+  
